@@ -241,6 +241,7 @@ section-container {
 .btn-contact{
     border: black 0.2rem solid;
     background: rgb(220, 213, 172);
+    color: black;
     font-weight: 600;
     transition: all 500ms ease;
     padding: 1rem;
@@ -385,6 +386,7 @@ footer p{
 
 .btn-donate{
     border: black 0.2rem solid;
+    color: black;
     background: rgb(219, 216, 202);
     font-weight: 600;
     transition: all 500ms ease;

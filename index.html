@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TSA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png ">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"><div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div></div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#Donate">Donate</a></li>
+            </ul>
+        </div>
+    </nav> 
+    <nav id="hamburger-nav">
+        <div class="logo">Tamil Student Association</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="togglemenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#projects" onclick="togglemenu()">Projects</a></li>
+                <li><a href="#Contact" onclick="togglemenu()">Contact</a></li>
+                <li><a href="#Donate" onclick="togglemenu()">Donate</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img class="img-styling" src="./assets/main.png" alt="tsa team image">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, we are</p>
+            <h1 class="title">TSA</h1>
+            <p class="section__text__p2">A team of students at Donald A. Wilson S.S. dedicated to introducting tamil culture to all through projects and events that enrich the culture of not just our school but our comunity as a whole.</p>
+        
+        <div class="btn-container">
+            <button class="btn-contact" onclick="location.href='./#Contact'">
+                Contact Us
+            </button>
+        </div>
+
+        <div class="socials-container">
+            <img src="./assets/insta.png" alt="tsa insta profile" 
+            class="icon" onclick="location.href='https://www.instagram.com' " target="_blank">
+            <img src="./assets/linkedin.png" alt="tsa linkedin profile" 
+            class="icon" onclick="location.href='https://www.linkedin.com' ">
+
+        </div>
+
+
+
+
+        </div> 
+    </section>
+    <section id="projects">
+        <div>
+            <h1 class="projects-text">Our Work</h1>
+        </div>
+        <div class="gallery">
+            <div class="project" id="hover-text">
+                <img src="./assets/project1.png" alt="Project 1">
+                <h3>TSA Movie Night</h3>
+                <p>A movie night held at our highschool, to showcase tamil cinema to the student body.</p>
+            </div>
+            <div class="project"id="hover-text2">
+                <img src="./assets/project2.jpg" alt="Project 1">
+                <h3>TSA Talent Show Dance</h3>
+                <p>A coreographed tamil dance at our schools talent show.</p>
+            </div>
+            <div class="project"id="hover-text3">
+                <img src="./assets/project3.jpg" alt="Project 1">
+                <h3>Tamil New Year</h3>
+                <p>The Tamil Student Association celebrated the Tamil New Year by throwing an incredible party with food, games and music!</p>
+            </div>
+            <div class="project"id="hover-text4">
+                <img src="./assets/project4.jpg" alt="Project 1">
+                <h3>TSA Potluck Sale</h3>
+                <p>A food sale where members brought different dishes from tamil cuisine to sell to the students.</p>
+            </div>
+        </div>  
+    </section>
+    <section id="Contact">
+        
+        <h1 class="contact-text">Contact Us</h1>
+        <div class="contact-card">
+            <h2>Contact Information</h2>
+            <p><strong>Name:</strong> Tamil Student Association</p>
+            <p><strong>Email:</strong> tsa088266@gmail.com</p>
+            <p><strong>Phone:</strong> (548)-883-1126</p>
+            <p><strong>Location:</strong> Donald A. Wilson S.S.</p>
+            
+        </div>
+    </section>
+    
+    <section id="Donate">
+        <h1 class="donate-text">Donate</h1>
+        <p class="donate-text1">
+            At the Tamil Student Association, we're passionate about celebrating and sharing the rich tapestry of Tamil culture while promoting diversity and inclusivity. Your support plays a crucial role in our mission to bridge cultures, educate, and foster a sense of belonging. By donating to our association, you're helping us organize cultural events, educational programs, and initiatives that promote unity and understanding. Every contribution aids us in our journey to create a more inclusive and culturally diverse world. Join hands with us today to make a difference in the Tamil community and beyond. Your generosity is invaluable in making this vision a reality. Thank you for your support!
+        </p>
+        <button class="btn-donate" onclick="location.href='./#Contact'">
+            Donate Now
+        </button>
+    </section>
+    <footer>
+        
+        <P>Copyright &#169; 2023-2024 Rohit Chavali. All Rights Reserved.</P>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

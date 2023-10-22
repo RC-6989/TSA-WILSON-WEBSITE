@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(237, 237, 228);
+    transition: background-color 0.3s;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+p {
+    color: rgb(18, 18, 18)''
+}
+
+
+a, .btn{
+    transition: all 300ms ease; 
+}
+
+nav, .nav-links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+a {
+    color: black;
+    text-decoration: none; 
+    text-decoration-color: white; 
+}
+
+a:hover {
+    color: rgb(220, 210, 155);
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+.logo{
+    font-size: 1.7rem;
+    margin-left: 0;
+}
+
+.logo:hover{
+    cursor: default;
+    text-shadow: 3px 3px rgb(220, 210, 155);
+}
+
+#hamburger-nav{
+    display:none;
+}
+
+.hamburger-menu{
+    position: relative;
+    display: inline-block;
+
+}
+
+.hamburger-icon{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px; 
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+}
+.hamburger-icon span:hover{
+    background-color: gold;
+}
+
+.menu-links{
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    background-color: beige;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden; 
+    transition: all 0.3 ease-in-out;
+
+}
+
+.menu-links a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links li{
+    list-style: none;
+}
+
+.menu-links.open{
+    max-height: 300px;
+
+}
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+.hamburger-icon span:first-child {
+    opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+section-container {
+    display: flex;
+}
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    height: 50vh;
+
+}
+
+.section__pic-container {
+    display: flex;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+.img-styling {
+    border-radius: 20%;
+    border: 5px solid black;
+}
+
+.section__pic-container:hover{
+    -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+
+.section__text {
+    align-self: center;
+    text-align: center;
+    margin-top: 8vh;
+    min-width: 300px;
+}
+
+.section__text_p{
+    font-weight:600;
+    font-size: 1.5rem;
+    
+    
+}
+
+.section__text__p1 {
+    text-align: center;
+    margin: 0;
+
+}
+
+.section__text__p1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#socials.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    gap: 10rem;
+}
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+
+.btn-contact{
+    border: black 0.2rem solid;
+    background: rgb(220, 213, 172);
+    font-weight: 600;
+    transition: all 500ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.btn-contact:hover{
+   cursor: pointer;
+   background: beige;
+
+}
+
+
+#projects{
+    min-height: fit-content;
+    margin-bottom: 30rem;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50vh, 1fr));
+    gap: 5rem;
+    margin-bottom: 10rem;
+    justify-content: space space-evenly;
+    align-items: center;
+    align-self: center;
+}
+
+.gallery img{
+    width: 100%;
+    height: fit-content;
+    border-radius: 2rem;
+}
+
+
+.project {
+    border: 2px solid black;
+    border-radius: 2rem;
+    padding: 30px;
+    min-width:250px;
+    align-items: center
+}
+
+
+.project:hover{
+    box-shadow: 0 5px 100000px 0px rgba(218, 206, 117, 0.9);
+    -webkit-transform: scale(1.1);
+    -webkit-filter: brightness(100%);
+	transform: scale(1.1);
+  
+
+}
+
+
+
+.projects-text {
+    padding: 5rem;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.contact-text {
+    padding-top: 10rem;
+    margin-top: 40vh;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+@media (max-width: 1500px){
+    .contact-text{
+        padding: 0.1rem;
+        margin-top: 0;
+    }
+}
+@media (max-width: 1400px){
+    .contact-text{
+        padding: 0;
+        margin-top: 0;
+    }
+    #projects{
+        margin-bottom: 0;
+    }
+}
+
+
+
+
+footer{
+    height: 5vh;
+    margin: 4rem 1rem;
+
+}
+
+footer p{
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+}
+
+.donate-text{
+    padding-top: 10rem;
+
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.donate-text1 {
+    padding-top: 2rem;
+    margin-top: 2rem;
+    text-align: left;
+    max-width:40%;
+    margin-left: 28%;
+    padding: 2rem 2rem;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 3px 3px 4px 4px rgba(0,0,0,0.1);
+    box-shadow: 0px 5px 20px 1px;
+    border-radius: .4em;
+    background: linear-gradient(to bottom, #e8e7d8, #e3e3dd);
+}
+
+.donate-text1:hover{
+    box-shadow: 0 5px 100000px 0px rgba(242, 178, 76, 0.9);
+    -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+
+}
+
+
+.btn-donate{
+    border: black 0.2rem solid;
+    background: rgb(219, 216, 202);
+    font-weight: 600;
+    transition: all 500ms ease;
+    padding: 1rem;
+    margin-left: 28%;
+    margin-top: 1.5rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.btn-donate:hover{
+   cursor: pointer;
+   background: beige;
+
+}
+
+#Projects {
+    height: fit-content;
+}
+
+#Donate{
+    padding: 0;
+    align-items: top;
+    height: fit-content;
+
+}
+#Contact{
+    margin-bottom: 0;
+    height: fit-content;
+    
+}
+
+.contact-card {
+    max-width: 600px;
+    height: 200px;
+    margin: 100vh auto;
+    background-color:#e3ded3 ;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 5vh;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 1.5rem;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    box-shadow: 0 5px 35px 0px rgba(0,0,0,.9);
+
+}
+
+
+
+
+
+.contact-card h2 {
+    color: black;
+
+}
+
+
+
+.contact-card p {
+    color: black;
+}
+.contact-card:hover{
+    box-shadow: 0 5px 10px 0px rgba(226, 167, 71, 0.9);
+    -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.contact-card .contact-info {
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .contact-card {
+        margin: 10px;
+        max-width: 100%;
+    }
+}
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
+.hidden {
+    opacity:0;
+  }
+  .console-container {
+   
+    font-family:Khula;
+    font-size:3rem;
+    text-align:center;
+    height:200px;
+    width:600px;
+    display:block;
+    color:black;
+    margin-top: 10rem;
+
+  }
+  .console-underscore {
+     display:inline-block;
+    position:relative;
+    top:-0.14em;
+    left:10px;
+  }

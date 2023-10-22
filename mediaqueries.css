@@ -126,8 +126,12 @@
         padding: 1rem;
         margin-top: 2rem;
         margin-bottom: 4rem;
+        height: 300px;
     }
     .footer{
         opacity: 0;
+    }
+    .project {
+      max-height: 300px;
     }
   }
